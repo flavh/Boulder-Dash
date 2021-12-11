@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bouldeurre Dashe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body onload="init()">    
+    <div id="conteneur">
+      <div class="page" id="pageVictoire">
+        <p id="victoireTexte">Victoire</p>
+      </div>
+      <div class="page" id="pageDefaite">
+        <p id="defaiteTexte">defaite (t'es nul)</p>
+      </div>
+      <a id="start" href="#">start</a>
+      <header>
+        <p id="affNiveau"></p>
+        <p id="affVies"></p>
+        <p id="affMinuteur"></p>
+        <p id="affScore"></p>
+      </header>
+      <canvas id="cvs" width="1280" height="704">
+        <p>Le canvas ne peut pas être affiché.></p>
+      </canvas>
+    </div>
+		<script src="maps.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>

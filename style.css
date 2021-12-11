@@ -1,0 +1,127 @@
+*{
+  font-family: 'Boulder Dash', cursive;
+}
+body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+}
+.page{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 40px;
+}
+#victoireTexte{
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: yellow;
+  text-align: center;
+  width: 100%;
+}
+
+#defaiteTexte{
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: red;
+}
+#conteneur {
+  position: relative;
+  border: 1px solid #000;
+  width: fit-content;
+  z-index: 1;
+}
+#start {
+  font-size: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: black;
+  background: yellow;
+  font-weight: 1000;
+}
+#start:hover {
+  box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.5);
+}
+#restart {
+  font-size: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: black;
+  background: yellow;
+  font-weight: 1000;
+}
+#restart:hover {
+  box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.5);
+}
+canvas {
+	transition: box-shadow 1s;
+  position: relative;
+  z-index: -1;
+  /*animation: tourne 5s ease-in-out infinite;*/ 
+}
+ /*@keyframes tourne{
+  0%{
+    transform: rotate(0deg)
+  }
+  50%{
+    transform: rotate(360deg)
+  }
+  100%{
+    transform: rotate(0deg)
+  }
+} */
+.canvasApresClick{
+  box-shadow: 0 0 20px white;
+}
+header {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 33% 16.5% 16.5% 33%;
+  height:100%;
+}
+header p {
+  color: yellow;
+  font-size: 40px;
+}
+#affNiveau,
+#affVies {
+  text-align: left;
+}
+#affScore,
+#affMinuteur {
+  text-align: right;
+}
+@font-face{
+  font-family: "Boulder Dash";
+  src: url("Police/BoulderDash6128.ttf")
+}
