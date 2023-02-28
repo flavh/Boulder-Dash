@@ -1,5 +1,13 @@
 # Boulder-Dash
 
-Run index.html to play or go to : https://flavh.github.io/Boulder-Dash/
+The Boulder Dash game, implemented with JavaScript. 
 
-Use the arrows to move, enter to kill yourself.
+## Controls
+
+* Move : <kbd>Arrows</kbd>
+* Surrend : <kbd>Enter</kbd>
+
+## Contributors
+* LAHAUT Félix
+* CUENIN Tommy
+* HIRTZ Flavien
